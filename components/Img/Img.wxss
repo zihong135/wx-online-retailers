@@ -1,0 +1,15 @@
+.neirong {
+  width: 90rpx;
+  height: 90rpx;
+  position: relative;
+}
+.neirong image {
+  width: 100%;
+  height: 100%;
+  border-radius: 15rpx;
+}
+.neirong icon {
+  position: absolute;
+  top: -20rpx;
+  right: -20rpx;
+}

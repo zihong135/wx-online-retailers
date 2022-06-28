@@ -1,0 +1,36 @@
+navigator{
+    .group{
+        display: flex;
+        border-bottom: 1px solid #ccc;
+        .tu{
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;      
+            image{
+                width: 70%;
+            }
+        }
+        .right{
+           
+     flex: 3;
+      display: flex;
+    //   作为列显示元素
+      flex-direction: column;
+    //   在各行列之间留有空白
+      justify-content: space-around;
+            .zi{
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                // 只显示到第二行
+                -webkit-line-clamp:2;
+        
+            }
+            .price{
+                color:var(--themeColor);
+
+            }
+        }
+    }
+}

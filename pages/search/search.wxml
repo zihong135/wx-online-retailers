@@ -1,0 +1,9 @@
+<view class="search">
+        <input value="{{isvalue}}" placeholder="请输入搜索内容" bindinput="handleinput"></input>
+        <button hidden="{{!isfalse}}" bindtap="cancle">取消</button>
+</view>
+<view class="neirong">
+    <view class="searchitem" wx:for="{{goods}}" wx:key="goods_id">
+       {{item.goods_name}}
+    </view>
+</view>

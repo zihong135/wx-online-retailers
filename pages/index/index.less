@@ -1,0 +1,47 @@
+.swiper-1{
+    swiper{
+        width: 100wx;
+        height: 340rpx;
+        image{
+            width: 100%;
+        }
+    }
+}
+.daohang{
+    display: flex;
+    navigator{
+        flex: 1;
+        padding: 20rpx;
+        image{
+            width: 100%;
+        }
+    }
+}
+.listgroup{
+    .loutitle{
+        width: 100%;
+        padding: 10rpx 0;
+        .louitem{
+            overflow: hidden;
+            navigator{
+                width: 33.33%;
+                float: left;
+                // 后四个超链接 232*386
+                &:nth-last-child(-n+4){
+                    height:calc(33.33vw * 386 /  232 /2);
+                    border-left: 10rpx solid #fff;
+                }
+                  /* 2 3 两个超链接 */
+                &:nth-child(2),
+                &:nth-child(3){
+                            border-bottom: 10rpx solid #fff;
+                                 }
+
+                image{
+                    width:100%;
+                    height:100%
+                }
+            }
+        }
+    }
+}

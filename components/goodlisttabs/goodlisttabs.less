@@ -1,0 +1,17 @@
+.group{
+    // 不能在这加display:flex否则会出现内容也在同一行
+    .title{
+        display: flex;
+        .item{
+            flex:1;
+            display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10rpx 0;
+        }
+    }
+}
+.active{
+    color:var(--themeColor);
+    border-bottom: 5rpx solid currentColor;
+}

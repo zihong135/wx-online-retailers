@@ -1,0 +1,28 @@
+<goodlisttabs tabs="{{tabs}}" bindtabsitem="tabsitem">
+    <view class="neirong">
+        <view class="title">问题的种类</view>
+        <view class="gneng">
+            <text>功能建议</text>
+             <text>购买遇到问题</text>
+              <text>性能问题</text>
+               <text>其他</text>  
+        </view>
+        <view class="yu">
+            <textarea  bindinput="handleinput" value="{{inputVal}}" placeholder="请描述一下您的问题"></textarea>
+         <view class="didingyi">
+            <button bindtap="handleimg">+</button>
+            <view class="Img2" wx:for="{{changeimg}}" wx:key="*this" bindtap="cancleimg" data-index="{{index}}">
+                <Img src="{{item}}"></Img>
+            </view>
+        </view>
+        </view>
+        <view class="tijiao">
+            <button type="warn" bindtap="handlejiao">
+                <icon  type="success_no_circle"  color="white">
+                    
+                </icon>
+                提交
+            </button>
+        </view>
+    </view>
+</goodlisttabs>

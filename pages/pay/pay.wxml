@@ -1,0 +1,50 @@
+<view class="group">
+    <!-- 如果其中的属性值为空则为false,对象哪怕是空对象也是true -->
+    <view class="btn" wx:if="{{!address.userName}}">
+        <!--  plain="{{true}}"背景透明 -->
+        <button class="shouhuo" plain="{{true}}" type="primary" bindtap="address">收货地址</button>
+    </view>
+    <view class="shoujian" wx:else>
+        <view class="left">
+        <view>收件人:{{address.userName}}</view>
+        <view>{{address.all}}</view>
+    </view>
+    <view class="phone">{{address.telNumber}}</view>
+    </view>
+</view>
+<!-- 购物车内容-->
+<view class="group2">
+    <block wx:if="{{cart.length!=0}}">
+        <view class="title">购物车</view>
+    <view class="neirong" wx:for="{{cart}}" wx:key="goods_id">
+        <!-- 图片链接 -->
+        <navigator   url=""  open-type="navigate">
+            <image  src="{{item.goods_small_logo}}" mode="widthFix"/> 
+        </navigator>
+         <view class="right2">
+             <!-- 名字 -->
+             <view class="rong">{{item.goods_name}}</view>
+             <view class="bottom">
+                 <!-- 价格a -->
+                 <view class="price">{{item.goods_price}}</view>
+                 <view class="suan2">
+                         <view class="zi2">X {{item.num}}</view>           
+                 </view>          
+             </view>
+         </view> 
+    </view>
+    </block>
+    <block wx:else>
+        <image mode="widthFix" src="http://hbimg.b0.upaiyun.com/e1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658" ></image>
+    </block>
+      
+</view>
+<view class="bottomtool">
+    <view class="bottom-price">
+        合计:<text class="yuan">{{totalprice}}</text> 
+        <view>包含运费</view>
+    </view>
+    <view class="allprice"  bindtap="handlepay">
+        支付({{totalnum}})
+    </view>  
+</view>

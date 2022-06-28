@@ -1,0 +1,116 @@
+page{
+    background-color: #edece8;
+    
+}
+.group{
+    height: 45vh;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--themeColor);
+    .bround{
+        position: relative;
+        .xiatu{
+            height: 50vh;
+            filter:blur(10rpx)
+        }
+        .qian{
+            position:absolute;
+            top: 15%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            .shangtu{
+                border-radius: 50%;
+                height: 150rpx;
+                width: 150rpx;
+            }
+            .zi{
+                color: white;
+                margin-top: 40rpx;
+            }
+        }
+    }
+    .login{
+        text-align: center;
+        border:1rpx solid green;
+        transform: translateX(-50%);
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        padding: 30rpx;
+        font-size: 38rpx;
+        border-radius: 10rpx;
+    }
+}
+.group2{
+    position: relative;
+    .dabackground{
+        padding-bottom: 100rpx;
+        position: absolute;
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+        top:-40rpx;
+        color:#666;    
+    .history-item{
+        background-color: white;
+        display: flex;
+        navigator{
+            flex: 1;
+            text-align: center;
+            padding: 5px 0 ;
+            .num{
+                color: var(--themeColor);
+            }
+        }
+    }
+    .dingdan{
+        background-color: white;
+        margin-top: 30rpx;
+        .title{
+            padding: 20rpx;
+            border-bottom: 1rpx solid #ccc;
+        }
+        .wode{
+            display: flex;
+            text-align: center;
+            padding: 10rpx 0;
+            navigator{
+            flex: 1;
+            .icon{
+                color:var(--themeColor);
+                font-size: 40rpx;
+            }
+                }
+            }
+        }
+    .address{
+        background-color: white;
+        padding:20rpx;
+        margin-top: 30rpx;
+    }
+    .san{
+        background-color: white;
+        margin-top: 30rpx;
+        .kefu{
+            justify-content: space-between;
+            display: flex;
+            border-bottom: 1rpx solid #ccc;
+            padding:20rpx;
+        }
+        .yijian{
+            border-bottom: 1rpx solid #ccc;
+            padding:20rpx;
+        }
+        .about{
+            border-bottom: 1rpx solid #ccc;
+            padding:20rpx;
+        }
+    }
+    .yingyong{
+        background-color: white;
+        padding: 20rpx;
+        margin-top: 30rpx;
+    }
+    }
+}

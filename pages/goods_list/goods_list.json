@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "searchinput":"../../components/searchinput/searchinput",
+    "goodlisttabs":"../../components/goodlisttabs/goodlisttabs"
+  },
+  "navigationBarTitleText": "商品列表",
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
+}

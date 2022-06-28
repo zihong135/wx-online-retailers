@@ -1,0 +1,51 @@
+.cate{
+    height: 100%;
+    .ti{
+        height: calc(100vh - 90rpx);
+        display:flex;
+        .leftmenu{
+            flex: 2;
+            .menuleft{
+                justify-content: center;
+                align-items: center;
+                height: 80rpx;
+                display: flex;
+                font-size: 30rpx;
+            }
+            .active{
+                color: var(--themeColor);
+                // 等于字体颜色的边框
+                border-left: 5rpx solid currentColor;
+            }
+        }
+        .rightmenu{
+            flex: 5;
+            .group{
+                .title{
+                    height: 80rpx;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .zi2{
+                        color: #ccc;
+                        padding: 0 10rpx;            
+                    }
+                }
+                .item{
+                    display: flex;
+                    flex-wrap: wrap;
+                    navigator{
+                        width: 33.33%;
+                        text-align: center;
+                        image{
+                            width: 50%;
+                        }
+                        .zi{
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

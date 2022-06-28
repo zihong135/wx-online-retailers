@@ -1,0 +1,2 @@
+<!-- getUserInfo有一个回调函数,需要自定义 -->
+<button open-type="getUserInfo" plain="{{true}}" type="primary" bindgetuserinfo="handletoken">授权</button>

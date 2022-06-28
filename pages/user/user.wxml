@@ -1,0 +1,72 @@
+<view class="group" >
+    <view class="bround" wx:if="{{userInfo.nickName}}">
+        <image class="xiatu" src="{{userInfo.avatarUrl}}"/>
+        <view class="qian">
+            <image class="shangtu" src="{{userInfo.avatarUrl}}"/>
+            <view class="zi">{{userInfo.nickName}}</view>
+        </view>
+    </view>
+    <navigator class="login"  url="/pages/login/login"  open-type="navigate" wx:else>
+        登录
+    </navigator>
+</view>
+<!-- 历史收藏 -->
+<view class="group2">
+    <view class="dabackground">
+        <view class="history-item">
+        <navigator>
+        <view class="num">0</view>
+        <view class="zi2">收藏的店铺</view>   
+          </navigator>
+        <navigator url="/pages/collect/collect">
+        <view class="num" >{{shounum}}</view>
+        <view class="zi2">收藏的商品</view>   
+          </navigator>
+          <navigator>
+        <view class="num">0</view>
+        <view class="zi2">关注的商品</view>   
+          </navigator>
+          <navigator>
+        <view class="num">0</view>
+        <view class="zi2">收藏的店铺</view>   
+          </navigator>
+        </view> 
+    <!-- 我的订单 -->
+    <view class="dingdan">
+    <view class="title">我的订单</view>
+    <view class="wode">
+    <navigator class=""  url="/pages/order/order?type=1"  open-type="navigate"> 
+     <view class="icon iconfont iconfont icon-ding_dan"></view>
+     <view class="zi2">全部订单</view>   
+   </navigator>
+   <navigator class=""  url="/pages/order/order?type=2" open-type="navigate"> 
+     <view class="icon iconfont icon-fukuantongzhi"></view>
+     <view class="zi2">待付款</view>   
+   </navigator>
+   <navigator class=""  url="/pages/order/order?type=3" open-type="navigate"> 
+     <view class="icon iconfont icon-receipt-address"></view>
+     <view class="zi2">待收货</view>   
+   </navigator>
+   <navigator class=""  url=""  open-type="navigate"> 
+     <view class="icon iconfont icon-tuihuotuikuan_dianpu"></view>
+     <view class="zi2">全部订单</view>   
+   </navigator>
+   </view>
+  </view>
+  <!-- 收获地址 -->
+  <view class="address">收获地址管理</view>
+   <view class="san">
+    <view class="kefu">
+      <view>联系客服</view>
+      <view>400-648-4000</view>  
+    </view>
+    <navigator class="yijian" url="/pages/feedback/feedback">
+      意见反馈
+    </navigator>
+    <view class="about">关于我们</view>
+  </view>
+  <!-- 应用推荐 -->
+  <view class="yingyong">将应用推荐给他人</view>
+  </view>
+</view>
+  

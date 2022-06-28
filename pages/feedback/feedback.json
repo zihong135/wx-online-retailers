@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "goodlisttabs":"../../components/goodlisttabs/goodlisttabs",
+    "Img":"../../components/Img/Img"
+  },
+  "navigationBarTitleText": "反馈"
+}

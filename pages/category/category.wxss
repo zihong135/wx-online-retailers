@@ -1,0 +1,45 @@
+.cate {
+  height: 100%;
+}
+.cate .ti {
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+.cate .ti .leftmenu {
+  flex: 2;
+}
+.cate .ti .leftmenu .menuleft {
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  display: flex;
+  font-size: 30rpx;
+}
+.cate .ti .leftmenu .active {
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+.cate .ti .rightmenu {
+  flex: 5;
+}
+.cate .ti .rightmenu .group .title {
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cate .ti .rightmenu .group .title .zi2 {
+  color: #ccc;
+  padding: 0 10rpx;
+}
+.cate .ti .rightmenu .group .item {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cate .ti .rightmenu .group .item navigator {
+  width: 33.33%;
+  text-align: center;
+}
+.cate .ti .rightmenu .group .item navigator image {
+  width: 50%;
+}

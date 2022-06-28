@@ -1,0 +1,50 @@
+
+<!-- 购物车内容-->
+<view class="group2">
+    <block wx:if="{{cart.length!=0}}">
+        <view class="title">购物车</view>
+    <view class="neirong" wx:for="{{cart}}" wx:key="goods_id">
+        <view class="check">
+            <!-- 复选框 -->
+            <checkbox-group bindtap="changecheck" data-index="{{item.goods_id}}">
+                <checkbox checked="{{item.check}}"></checkbox>
+            </checkbox-group>
+        </view>
+        <!-- 图片链接 -->
+        <navigator   url=""  open-type="navigate">
+            <image  src="{{item.goods_small_logo}}" mode="widthFix"/> 
+        </navigator>
+         <view class="right2">
+             <!-- 名字 -->
+             <view class="rong">{{item.goods_name}}</view>
+             <view class="bottom">
+                 <!-- 价格a -->
+                 <view class="price">￥ {{item.goods_price}}</view>
+                 <view class="suan2">
+                         <view class="hao" bindtap="changenum" data-operate="{{-1}}" data-id="{{item.goods_id}}">-</view>
+                         <view class="zi2">{{item.num}}</view>
+                         <view class="hao" bindtap="changenum" data-operate="{{1}}" data-id="{{item.goods_id}}">+</view>               
+                 </view>          
+             </view>
+         </view> 
+    </view>
+    </block>
+    <block wx:else>
+        <image mode="widthFix" src="http://hbimg.b0.upaiyun.com/e1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658" ></image>
+    </block>
+      
+</view>
+<view class="bottomtool">
+    <view class="bottom-check">
+        <checkbox-group bindtap="changeallcheck">
+            <checkbox checked="{{allcheck}}">全选</checkbox>
+        </checkbox-group>
+    </view>
+    <view class="bottom-price">
+        合计:<text class="yuan">{{totalprice}}</text> 
+        <view>包含运费</view>
+    </view>
+    <view class="allprice" bindtap="jiesuan">
+        结算({{totalnum}})
+    </view>  
+</view>

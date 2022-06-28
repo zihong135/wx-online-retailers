@@ -1,0 +1,45 @@
+.collect-main {
+  background-color: #f3f4f6;
+}
+.collect-main .collect-title {
+  padding: 40rpx 0;
+}
+.collect-main .collect-title .title {
+  padding: 15rpx;
+  margin-left: 20rpx;
+  border: 1rpx solid #ccc;
+  background-color: white;
+}
+.collect-main .collect-title .active {
+  color: var(--themeColor);
+  border: 1rpx solid currentColor;
+}
+.collect-main .collect-neirong navigator .group {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+}
+.collect-main .collect-neirong navigator .group .tu {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.collect-main .collect-neirong navigator .group .tu image {
+  width: 70%;
+}
+.collect-main .collect-neirong navigator .group .right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.collect-main .collect-neirong navigator .group .right .zi {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.collect-main .collect-neirong navigator .group .right .price {
+  color: var(--themeColor);
+}

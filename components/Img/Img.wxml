@@ -1,0 +1,7 @@
+<view class="neirong">
+    <image src="{{src}}" />
+    <icon class="" type="clear" size="17" color="red">
+        
+    </icon>
+      
+</view>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "goodlisttabs":"../../components/goodlisttabs/goodlisttabs"
+  },
+  "navigationBarTitleText": "订单中心"
+}

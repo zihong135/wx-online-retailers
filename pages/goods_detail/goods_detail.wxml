@@ -1,0 +1,52 @@
+<view >
+    <swiper autoplay="{{true}}" circular="{{true}}" indicator-dots="{{true}}"> 
+        <swiper-item wx:for="{{gooddetail.pics}}" wx:key="pics_id" bindtap="preview" data-index="{{index}}">
+            <image src="{{item.pics_mid}}" mode="widthFix"/>
+        </swiper-item>
+    </swiper>
+    <view class="price">
+        ￥{{gooddetail.goods_price}}
+    </view>
+      <view class="group">
+          <view class="name">
+              {{gooddetail.goods_name}}
+          </view>
+          <view class="shoucang" bindtap="handleco">
+              <text class="iconfont {{coactive?'icon-shoucang1':'icon-shoucang'}}"></text>
+              <text class="zi" >收藏</text>            
+          </view>    
+      </view>
+    <view class="group2">
+        <view class="title">图文详情</view>
+        <!-- 富文本 -->
+        <rich-text nodes="{{gooddetail.goods_introduce}}">
+            
+        </rich-text>
+          
+    </view>
+
+    <!-- 底部工具栏 -->
+    <view class="bottom">
+        <view class="item">
+            <view class="iconfont icon-kefu"></view>
+            <view class="zi2">客服</view>
+            <button open-type="contact"></button>  
+        </view>
+          <view class="item">
+            <view class="iconfont icon-yixianshi-"></view>
+            <view class="zi2">分享</view>
+            <button open-type="share"></button>  
+        </view>
+          <navigator url="/pages/cart/cart"  open-type="switchTab" class="item">
+            <view class="iconfont icon-gouwuche"></view>
+            <view class="zi2">购物车</view>  
+          </navigator>
+          <view class="cart" bindtap="addcart">
+            <view class="zi2">加入购物车</view>  
+        </view>
+          <view class="buy" bindtap="gotopay">
+            <view class="zi2">立即购买</view>  
+        </view>
+    </view>
+      
+</view>

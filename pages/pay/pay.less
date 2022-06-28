@@ -1,0 +1,98 @@
+.group{
+    .shoujian{
+        display: flex;
+        padding: 20rpx;
+        .left{
+            flex: 5;
+    }
+    .phone{
+        flex: 3;
+        text-align: right;
+    }
+}
+}
+.group2{
+    .title{
+        font-size: 32rpx;
+        padding: 10rpx;
+        border-top: 1rpx solid currentColor;
+        border-bottom: 1rpx solid currentColor;
+        color:var(--themeColor);
+    }
+    .neirong{
+        display: flex;
+        padding: 20rpx;
+        border-bottom: 1rpx solid #ccc;
+        navigator{
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            image{
+                width: 80%;
+            }
+        }
+        .right2{
+            flex:4;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            .rong{
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2; 
+                color: #999;
+            }
+            .bottom{
+                display: flex;
+                justify-content: space-between;
+                .price{
+                    color:var(--themeColor);
+                    font-size: 34rpx;
+                }
+                .suan2{
+                    display: flex;
+                    .zi2{
+                        width: 55rpx;
+                        height: 55rpx;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+.bottomtool{
+    position: fixed;
+    display: flex;
+    left: 0;
+    bottom:0;
+    height: 90rpx;
+    width: 100%;
+    border-top: 1rpx solid #ccc;
+    .bottom-price{
+        padding-right: 15rpx;
+        flex: 4;
+        text-align:right;
+        .yuan{
+            color:var(--themeColor);
+            font-weight: 600;
+            font-size: 34rpx;
+
+        }
+    }
+    .allprice{
+        flex: 3;
+        height: 90rpx;
+        display: flex;
+        color: white;
+        background-color: var(--themeColor);
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 34rpx;
+    }
+}

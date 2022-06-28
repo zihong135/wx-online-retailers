@@ -1,0 +1,115 @@
+page {
+  background-color: #edece8;
+}
+.group {
+  height: 45vh;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--themeColor);
+}
+.group .bround {
+  position: relative;
+}
+.group .bround .xiatu {
+  height: 50vh;
+  filter: blur(10rpx);
+}
+.group .bround .qian {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+.group .bround .qian .shangtu {
+  border-radius: 50%;
+  height: 150rpx;
+  width: 150rpx;
+}
+.group .bround .qian .zi {
+  color: white;
+  margin-top: 40rpx;
+}
+.group .login {
+  text-align: center;
+  border: 1rpx solid green;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  padding: 30rpx;
+  font-size: 38rpx;
+  border-radius: 10rpx;
+}
+.group2 {
+  position: relative;
+}
+.group2 .dabackground {
+  padding-bottom: 100rpx;
+  position: absolute;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -40rpx;
+  color: #666;
+}
+.group2 .dabackground .history-item {
+  background-color: white;
+  display: flex;
+}
+.group2 .dabackground .history-item navigator {
+  flex: 1;
+  text-align: center;
+  padding: 5px 0 ;
+}
+.group2 .dabackground .history-item navigator .num {
+  color: var(--themeColor);
+}
+.group2 .dabackground .dingdan {
+  background-color: white;
+  margin-top: 30rpx;
+}
+.group2 .dabackground .dingdan .title {
+  padding: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.group2 .dabackground .dingdan .wode {
+  display: flex;
+  text-align: center;
+  padding: 10rpx 0;
+}
+.group2 .dabackground .dingdan .wode navigator {
+  flex: 1;
+}
+.group2 .dabackground .dingdan .wode navigator .icon {
+  color: var(--themeColor);
+  font-size: 40rpx;
+}
+.group2 .dabackground .address {
+  background-color: white;
+  padding: 20rpx;
+  margin-top: 30rpx;
+}
+.group2 .dabackground .san {
+  background-color: white;
+  margin-top: 30rpx;
+}
+.group2 .dabackground .san .kefu {
+  justify-content: space-between;
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx;
+}
+.group2 .dabackground .san .yijian {
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx;
+}
+.group2 .dabackground .san .about {
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx;
+}
+.group2 .dabackground .yingyong {
+  background-color: white;
+  padding: 20rpx;
+  margin-top: 30rpx;
+}

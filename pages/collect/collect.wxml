@@ -1,0 +1,23 @@
+<goodlisttabs tabs="{{tabs}}" bindtabsitem="tabsitem">
+    <view class="collect-main">
+        <view class="collect-title">
+            <text class="title active">全部</text>
+            <text class="title">正在热卖</text>
+            <text class="title">即将上线</text>
+        </view>
+        <view class="collect-neirong">
+        <navigator  url="/pages/goods_detail/goods_detail?goods_id={{item.goods_id}}" open-type="navigate"
+        wx:for="{{collect}}" wx:key="goods_id">
+            <view class="group" >
+                <view class="tu">
+                    <image src="{{item.goods_small_logo!=''?item.goods_small_logo:'https://ww1.sinaimg.cn/large/007rAy9hgy1g24by9t530j30i20i2glm.jpg'}}" mode="widthFix"/>
+                </view>
+                <view class="right">       
+                <view class="zi">{{item.goods_name}}</view>
+                  <view class="price">￥{{item.goods_price}}</view>
+                  </view>
+            </view>
+        </navigator>    
+        </view> 
+    </view>
+</goodlisttabs>

@@ -1,0 +1,122 @@
+page {
+  padding-bottom: 90rpx;
+}
+.group .btn {
+  padding: 20rpx;
+}
+.group .btn .shouhuo {
+  width: 60%;
+}
+.group .shoujian {
+  display: flex;
+  padding: 20rpx;
+}
+.group .shoujian .left {
+  flex: 5;
+}
+.group .shoujian .phone {
+  flex: 3;
+  text-align: right;
+}
+.group2 .title {
+  font-size: 32rpx;
+  padding: 10rpx;
+  border-top: 1rpx solid currentColor;
+  border-bottom: 1rpx solid currentColor;
+  color: var(--themeColor);
+}
+.group2 .neirong {
+  display: flex;
+  padding: 10rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.group2 .neirong .check {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.group2 .neirong navigator {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.group2 .neirong navigator image {
+  width: 80%;
+}
+.group2 .neirong .right2 {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.group2 .neirong .right2 .rong {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  color: #999;
+}
+.group2 .neirong .right2 .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.group2 .neirong .right2 .bottom .price {
+  color: var(--themeColor);
+  font-size: 34rpx;
+}
+.group2 .neirong .right2 .bottom .suan2 {
+  display: flex;
+}
+.group2 .neirong .right2 .bottom .suan2 .hao {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1rpx solid #ccc;
+}
+.group2 .neirong .right2 .bottom .suan2 .zi2 {
+  width: 55rpx;
+  height: 55rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottomtool {
+  position: fixed;
+  display: flex;
+  left: 0;
+  bottom: 0;
+  height: 90rpx;
+  width: 100%;
+  border-top: 1rpx solid #ccc;
+}
+.bottomtool .bottom-check {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bottomtool .bottom-price {
+  padding-right: 15rpx;
+  flex: 4;
+  text-align: right;
+}
+.bottomtool .bottom-price .yuan {
+  color: var(--themeColor);
+  font-weight: 600;
+  font-size: 34rpx;
+}
+.bottomtool .allprice {
+  flex: 3;
+  height: 90rpx;
+  display: flex;
+  color: white;
+  background-color: var(--themeColor);
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 34rpx;
+}

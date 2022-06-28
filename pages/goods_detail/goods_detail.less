@@ -1,0 +1,106 @@
+page{
+    padding-bottom: 90rpx;
+  }
+swiper{
+    height: 35vh;
+    text-align: center;
+    image{
+        width: 60%;
+    }
+}
+.price{
+    font-size: 40rpx;
+    color: var(--themeColor);
+    font-weight: 600;
+    padding: 15rpx;
+}
+.group{
+    display: flex;
+    border-top: 5rpx solid #dedede;
+    border-bottom: 5rpx solid #dedede;
+    padding: 10rpx 0;
+    .name{
+        flex: 5;
+        color: #000;
+        font-size: 30rpx;
+        // 上下为0，左右为10rpx
+        padding: 0 10rpx;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;      
+    }
+    .shoucang{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: 1rpx solid #000;
+            .icon-shoucang1{
+                color: orangered;
+            }
+            .zi{
+
+            }
+    }
+}
+.group2{
+    .title{
+        color: var(--themeColor);
+        font-size: 30rpx;
+        padding: 20rpx;
+        font-weight: 600;
+        border-bottom: 5rpx solid #dedede;
+    }
+}
+.bottom{
+    display: flex;
+    border-top: 1rpx  solid #ccc;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90rpx; 
+    background-color: #fff; 
+    .item{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        // 相对定位
+        position: relative;
+        font-size: 24rpx;
+        button{
+            // 绝对定位
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            // 透明度
+            opacity: 0;
+        }
+    }
+    .cart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 34rpx;
+        flex: 2;
+        background-color: #ffa500;
+        color: white;
+        font-weight: 600;
+    }
+    .buy{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 34rpx;
+        flex: 2;
+        background-color:var(--themeColor);
+        color: white;
+        font-weight: 600;
+    }
+}
